@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ScopedStorage</string>
+    <string name="btn1">MediaStore Api 사용하여 Images 띄우기</string>
+    <string name="btn2"> Manage External Storage 사용</string>
+</resources>
