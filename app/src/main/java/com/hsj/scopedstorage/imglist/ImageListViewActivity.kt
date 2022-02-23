@@ -44,14 +44,14 @@ class ImageListViewActivity : AppCompatActivity(){
 
     override fun onResume() {
         super.onResume()
-        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
             == PackageManager.PERMISSION_GRANTED) {
             setAdapter()
             Log.d("tag", "permission granted")
 
 
         } else {
-            requestPermissions(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),0)
+            requestPermissions(arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),0)
             // Permission is not granted
             Log.d("tag", "permission not granted")
 

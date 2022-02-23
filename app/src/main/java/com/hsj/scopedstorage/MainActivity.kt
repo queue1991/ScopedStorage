@@ -37,11 +37,8 @@ class MainActivity : AppCompatActivity() {
                 val nextIntent = Intent(this, ImageListViewActivity::class.java)
                 startActivity(nextIntent)
             }
+
             R.id.btn_2 -> {
-
-            }
-
-            R.id.btn_3 -> {
                 val nextIntent = Intent(this, SaveImageActivity::class.java)
                 startActivity(nextIntent)
             }

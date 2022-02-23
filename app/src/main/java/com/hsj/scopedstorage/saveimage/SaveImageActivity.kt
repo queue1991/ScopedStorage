@@ -141,6 +141,9 @@ class SaveImageActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * getExternalFilesDir(Environment.DIRECTORY_PICTURES --> 외부 저장소의 Picture
+     */
     private fun updateCameraUi() {
         ibt_take_picture!!.setOnClickListener(object : View.OnClickListener{
             override fun onClick(p0: View?) {
@@ -161,6 +164,8 @@ class SaveImageActivity : AppCompatActivity() {
     /**
      * 사진 촬영 후 저장하는 로직
      * targetSdkVersion 30 대응으로 3.13.8 부터 삭제.
+     *
+     * MediaStore에 저장하는데에 READ_EXTERNAL_STRAGE / WRITE_EXTERNAL_STRAGE 필요 없음
      */
     private fun insertMediaStore(file : File) {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {

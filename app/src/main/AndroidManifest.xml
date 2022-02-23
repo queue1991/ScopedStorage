@@ -26,8 +26,15 @@
             android:exported="true"/>
     </application>
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- MediaStore로 이미지 불러오기 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Glide -->
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 이미지 캡처 -->
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 이미지 캡처 -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 </manifest>
