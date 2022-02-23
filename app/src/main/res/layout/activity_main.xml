@@ -33,6 +33,15 @@
             android:gravity="center"
             android:onClick="btnClicked"/>
 
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/btn3"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:onClick="btnClicked"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

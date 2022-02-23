@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
 import com.hsj.scopedstorage.imglist.ImageListViewActivity
+import com.hsj.scopedstorage.saveimage.SaveImageActivity
 import java.io.File
 import java.io.FileOutputStream
 
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.btn_2 -> {
 
+            }
+
+            R.id.btn_3 -> {
+                val nextIntent = Intent(this, SaveImageActivity::class.java)
+                startActivity(nextIntent)
             }
         }
     }

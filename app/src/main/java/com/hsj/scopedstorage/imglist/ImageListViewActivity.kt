@@ -27,6 +27,9 @@ import com.bumptech.glide.request.target.Target
 import com.hsj.scopedstorage.R
 import java.io.File
 
+/**
+ * Glide -> placeholder 넣기전에 잘 안된 이유가 뭐지
+ */
 class ImageListViewActivity : AppCompatActivity(){
     private var gridView : GridView? = null
     private var adapter: ImageGalleryAdapter? = null
